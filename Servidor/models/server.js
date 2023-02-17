@@ -6,7 +6,7 @@ class Server {
       constructor() {
             this.app = express();
             this.PORT = process.env.PORT;
-            this.authPath = '/api'
+            this.stationPath = '/api'
             //DB connection
             this.dbConnection()
             //Middlewares
@@ -26,7 +26,7 @@ class Server {
       }
 
       routes() {
-            // this.app.use(this.authPath, require('../routes/stations'))
+            this.app.use(this.stationPath, require('../routes/stations'))
       };
       start() {
             this.app.listen(this.PORT, () => {

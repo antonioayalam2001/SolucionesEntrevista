@@ -1,7 +1,7 @@
 {
-  "name": "08-webserverrest",
+  "name": "server",
   "version": "1.0.0",
-  "description": "Application of web server REST using node JS",
+  "description": "server to get information about stations",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
